@@ -1,0 +1,36 @@
+# Render Blueprint for Global Transaction Validator Backend
+services:
+  # PostgreSQL Database
+  - type: postgresql
+    name: xeno-db
+    database: transaction_validator
+    user: postgres
+    plan: free
+    ipAllowList: []
+
+  # Backend API
+  - type: web
+    name: xeno-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    repo: https://github.com/akanksha-87977/xeno.git
+    branch: main
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: xeno-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 30
+      - key: BACKEND_CORS_ORIGINS
+        value: '["https://xeno-frontend.vercel.app"]'
+      - key: ENVIRONMENT
+        value: production
+      - key: PYTHON_VERSION
+        value: 3.11.0
