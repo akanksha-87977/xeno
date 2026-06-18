@@ -1,0 +1,11 @@
+customer_id,full_name,email,phone_number,city,signup_date
+CUST001,Rajesh Kumar,rajesh@gmail.com,9876543210,Delhi,2024-01-15
+CUST002,Priya Sharma,priya@yahoo.com,9876543211,Mumbai,2024-01-16
+CUST003,Amit Patel,amit@gmail.com,9876543212,Bangalore,2024-01-17
+CUST004,Sneha Reddy,sneha@outlook.com,9876543213,Hyderabad,2024-01-18
+CUST005,Vikram Singh,vikram@gmail.com,9876543214,Chennai,2024-01-19
+CUST006,Ananya Gupta,ananya@gmail.com,9876543215,Delhi,2023-12-01
+CUST007,Rahul Verma,rahul.v@company.com,9876543216,Mumbai,2023-12-05
+CUST008,Deepika Nair,deepika@gmail.com,9876543217,Bangalore,2023-12-10
+CUST009,Arjun Malhotra,arjun@hotmail.com,9876543218,Delhi,2023-11-20
+CUST010,Kavya Iyer,kavya@gmail.com,9876543219,Chennai,2023-11-25

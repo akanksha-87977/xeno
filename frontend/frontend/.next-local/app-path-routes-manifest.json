@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/(auth)/register/page": "/register",
+  "/(auth)/login/page": "/login",
+  "/page": "/",
+  "/(dashboard)/customers/analytics/page": "/customers/analytics",
+  "/(dashboard)/reports/page": "/reports",
+  "/(dashboard)/customers/upload/page": "/customers/upload",
+  "/(dashboard)/dashboard/page": "/dashboard",
+  "/(dashboard)/vip-customers/page": "/vip-customers",
+  "/(dashboard)/sql-insights/page": "/sql-insights"
+}

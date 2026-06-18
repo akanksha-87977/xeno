@@ -2,11 +2,22 @@
 
 # dependencies
 /node_modules
+/.venv
+**/node_modules
 /.pnp
 .pnp.js
 
+# Next.js build output
+/.next
+/.next-local
+
 # testing
 /coverage
+
+# local data / generated files
+/app.db
+/frontend/.next
+/frontend/.next-local
 
 # production
 /build
