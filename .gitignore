@@ -8,6 +8,8 @@
 .pnp.js
 
 # Next.js build output
+**/.next
+**/.next-local
 /.next
 /.next-local
 
