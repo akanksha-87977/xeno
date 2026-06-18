@@ -28,6 +28,8 @@ class Settings(BaseSettings):
         "http://localhost:3000",
         "http://localhost:3006",
         "http://localhost:3007",
+        "https://frontend-five-eta-32.vercel.app",
+        "https://frontend-6zqhq0xnp-akanksha-87977s-projects.vercel.app",
     ]
     
     # File Upload

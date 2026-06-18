@@ -1,0 +1,17 @@
+name: xeno-backend
+service:
+  port: 8000
+  dockerfile: backend/Dockerfile
+  env:
+    - key: DATABASE_URL
+      value: "sqlite:///./app.db"
+    - key: SECRET_KEY
+      value: "production-secret-key-change-me"
+    - key: ALGORITHM
+      value: "HS256"
+    - key: ACCESS_TOKEN_EXPIRE_MINUTES
+      value: "30"
+    - key: BACKEND_CORS_ORIGINS
+      value: '["https://frontend-five-eta-32.vercel.app"]'
+    - key: ENVIRONMENT
+      value: "production"

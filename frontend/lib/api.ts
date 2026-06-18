@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  // keep fallback aligned with your running frontend environment
-  'http://localhost:8000/api/v1';
+// Public tunnel URL from localhost.run - points to the locally running backend
+const API_URL = 'https://41dc982fc67a2b.lhr.life/api/v1';
 
 export const api = axios.create({
   // Make sure axios doesn't hang forever in the browser
